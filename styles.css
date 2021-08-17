@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 17px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 25%;
+  border-radius: 20px;
+}
+
+.illustration {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.info h1 {
+  text-align: center;
+  margin: 30px 0px 5px 0px;
+  font-size: 1.6rem;
+}
+
+.info p {
+  width: 60%;
+  display: block;
+  margin: 15px auto 25px auto;
+  text-align: center;
+  font-size: 1rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan {
+  background-color: hsl(225, 100%, 98%);
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px 20px 10px;
+  border-radius: 10px;
+  align-items: center;
+  margin: 20px auto 20px auto;
+}
+
+.plan a:active {
+  color: hsl(224, 23%, 55%);
+}
+
+.music-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.plan-details h2 {
+  margin: 5px 0px 5px 0px;
+  font-size: 1rem;
+}
+
+.plan-details p {
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+  text-align: left;
+  color: hsl(224, 23%, 55%);
+}
+
+.proceed-button {
+  background: hsl(245, 75%, 52%);
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  padding: 12px 25px 12px 25px;
+  border-radius: 10px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.proceed-button:active {
+  background: hsl(225, 100%, 94%);
+}
+
+.cancel-button {
+  border: none;
+  background: none;
+  display: block;
+  margin: 20px auto 40px auto;
+  font-size: 1.2rem;
+  color: hsl(224, 23%, 55%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-button:active {
+  color: hsl(0, 0%, 0%);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+  .info p {
+    width: 75%;
+  }
+  .plan {
+    width: 90%;
+    padding: 20px 5px 20px 5px;
+  }
+  .proceed-button {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .cancel-button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .card {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .card {
+    width: 40%;
+  }
+}
